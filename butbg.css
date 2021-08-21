@@ -1,0 +1,40 @@
+.link a
+{
+width:200px;
+height:70px;
+line-height:70px;
+text-align:center;
+color:black;
+background-image:url("gradient.jpeg");
+font-family:arial;
+display:block;
+margin:50px auto;
+position:relative;
+box-shadow:2px 2px 4px #000;
+overflow:hidden;
+text-decoration:none;
+}
+
+body
+{
+background-image: url(indianflag.gif);
+background-size:cover;
+background-repeat:repeat;
+}
+
+input
+{
+width:200px;
+height:70px;
+line-height:70px;
+text-align:center;
+color:black;
+background-image:url("gradient.jpeg");
+font-family:arial;
+display:block;
+margin:50px auto;
+position:relative;
+box-shadow:2px 2px 4px #000;
+overflow:hidden;
+text-decoration:none;
+}

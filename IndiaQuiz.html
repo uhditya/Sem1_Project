@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<title>Quiz On India!</title>
+<script language="javascript">
+var answer, count=1;
+var points=0, correct=0, wrong=0;
+var starttime=new Date();
+function retur()
+{
+window.open("india.html");
+}
+
+function end()
+{
+alert("You chose " +correct+ " times correctly")
+alert("You chose " +wrong+" times incorrectly");
+alert("Hence your total points are "+points+"!");
+var endtime= new Date();
+var diff = endtime-starttime;
+diff=diff/1000;
+var second= Math.round(diff);
+alert("The total time taken by you is "+ second+ " seconds");
+alert("You will now return to the home page");
+retur();
+}
+
+function start()
+{
+alert("Best of Luck!");
+}
+
+function question1()
+{
+answer="Rajasthan";
+document.getElementById("a").value="Maharshtra";
+document.getElementById("b").value="Rajasthan";
+document.getElementById("c").value="Andhra Pradesh";
+document.getElementById("d").value="Uttar Pradesh";
+}
+
+function question2()
+{
+answer="Agra";
+document.getElementById("ques").innerHTML="Where is the Taj Mahal located?";
+document.getElementById("a").value="Agra";
+document.getElementById("b").value="New Delhi";
+document.getElementById("c").value="Mumbai";
+document.getElementById("d").value="Chandigarh";
+}
+
+function question3()
+{
+answer="Gateway Of India";
+document.getElementById("ques").innerHTML="Which of these is present in Maharashtra?";
+document.getElementById("a").value="HawaMehal";
+document.getElementById("b").value="JantarMantar";
+document.getElementById("c").value="AmbalaCaves";
+document.getElementById("d").value="Gateway Of India";
+}
+
+function question4()
+{
+answer="Varkala Beach";
+document.getElementById("ques").innerHTML="Which of the following beaches has cliffs adjacent to the arabian sea";
+document.getElementById("a").value="Condolim Beach";
+document.getElementById("b").value="Varkala Beach";
+document.getElementById("c").value="Radha Nagar Beach";
+document.getElementById("d").value="Puri Beach";
+}
+
+function check1()
+{
+if(document.getElementById("a").value===answer)
+{
+alert("Yes! Your Answer is Correct");
+count++;
+points=points+5;
+correct++;
+
+}
+else
+{
+alert("Sorry, but the correct answer was "+answer);
+count++;
+points--;
+wrong++;
+}
+if(count==1)
+{
+question1();
+}
+
+if(count==2)
+{
+question2();
+}
+
+if(count==3)
+{
+question3();
+}
+
+if(count==4)
+{
+question4();
+}
+if(count==5)
+{
+end();
+}
+
+
+}
+
+function check2()
+{
+if(document.getElementById("b").value===answer)
+{
+alert("Yes! Your Answer is Correct");
+count++;
+points=points+5;
+correct++;
+}
+else
+{
+alert("Sorry, but the correct answer was "+answer);
+count++;
+points--;
+wrong++;
+}
+if(count==1)
+{
+question1();
+}
+
+if(count==2)
+{
+question2();
+}
+
+if(count==3)
+{
+question3();
+}
+
+if(count==4)
+{
+question4();
+}
+if(count==5)
+{
+end();
+}
+
+}
+
+function check3()
+{
+if(document.getElementById("c").value===answer)
+{
+alert("Yes! Your Answer is Correct");
+count++;
+points=points+5;
+correct++;
+}
+else
+{
+alert("Sorry, but the correct answer was "+answer);
+count++;
+points--;
+wrong++;
+}
+if(count==1)
+{
+question1();
+}
+
+if(count==2)
+{
+question2();
+}
+
+if(count==3)
+{
+question3();
+}
+
+if(count==4)
+{
+question4();
+}
+if(count==5)
+{
+end();
+}
+
+}
+
+function check4()
+{
+if(document.getElementById("d").value===answer)
+{
+alert("Yes! Your Answer is Correct");
+count++;
+points=points+5;
+correct++;
+}
+else
+{
+alert("Sorry, but the correct answer was "+answer);
+count++;
+points--;
+wrong++;
+}
+if(count==1)
+{
+question1();
+}
+
+if(count==2)
+{
+question2();
+}
+
+if(count==3)
+{
+question3();
+}
+
+if(count==4)
+{
+question4();
+}
+
+if(count==5)
+{
+end();
+}
+
+
+
+
+
+}
+</script>
+<link rel="stylesheet" href="butbg.css">
+<style>
+body
+{
+background-image:url("indianflag.jpeg");
+background-size:cover;
+background-repeat:repeat-x;
+}
+table
+{
+vertical-align:base-line;
+}
+h2
+{
+text-decoration:underline;
+}
+
+</style>
+</head>
+<body onload="start();question1();">
+<h2 id="ques">Where is the Kathak dance native to?</h2>
+<br><br><br><br><br><br>
+<table width="90%" align="center">
+<tr>
+<td><div class="link">
+<input type="button" id="a" value="Maharashtra" onclick="check1()">
+</div>
+</td>
+<td>
+<div class="link">
+<input type="button" id="b" value="Rajasthan" onclick="check2()">
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="link">
+<input type="button" id="c" value="Andhra Pradesh" onclick="check3()">
+</div>
+</td>
+<td>
+<div class="link">
+<input type="button" id="d" value="Uttar Pradesh" onclick="check4()">
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
