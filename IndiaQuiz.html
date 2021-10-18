@@ -4,7 +4,7 @@
 <title>Quiz On India!</title>
 <script language="javascript">
 var answer, count=1;
-var points=0, correct=0, wrong=0;
+var points=10, correct=0, wrong=0;
 var starttime=new Date();
 function retur()
 {
@@ -75,9 +75,7 @@ if(document.getElementById("a").value===answer)
 {
 alert("Yes! Your Answer is Correct");
 count++;
-points=points+5;
 correct++;
-
 }
 else
 {
@@ -119,7 +117,6 @@ if(document.getElementById("b").value===answer)
 {
 alert("Yes! Your Answer is Correct");
 count++;
-points=points+5;
 correct++;
 }
 else
@@ -161,7 +158,6 @@ if(document.getElementById("c").value===answer)
 {
 alert("Yes! Your Answer is Correct");
 count++;
-points=points+5;
 correct++;
 }
 else
@@ -203,7 +199,6 @@ if(document.getElementById("d").value===answer)
 {
 alert("Yes! Your Answer is Correct");
 count++;
-points=points+5;
 correct++;
 }
 else
@@ -240,8 +235,6 @@ end();
 
 
 
-
-
 }
 </script>
 <link rel="stylesheet" href="butbg.css">
@@ -254,11 +247,12 @@ background-repeat:repeat-x;
 }
 table
 {
-vertical-align:base-line;
+vertical-align:base-line;  
 }
 h2
 {
 text-decoration:underline;
+    text-shadow: 2px 2px #ff0000;
 }
 
 </style>
